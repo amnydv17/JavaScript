@@ -43,5 +43,37 @@ const myfun = function(){
       console.log("Hello World");
 }
 
-console.log(typeof man);
+// console.log(typeof man);
+
+
+
+
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& //
+/*
+                                    MEMORY IN STACK
+Stack(Primitive)----> get a copy of declared variable
+Heap(Non-Primitive)--->get orignal value
+
+*/
+
+let myName = "AMAN-YADAV"
+let otherName = myName
+
+otherName = "YADAV_YADAV"
+console.log(myName);
+console.log(otherName);
+
+
+
+let userOne = {
+  email: "abc@gmail.com",
+  upi:"abcde@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "gsndfjds@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
