@@ -30,7 +30,7 @@ JavaScript is a dynamically typed language. Because data type will automatically
 /*
 Array,Object,Functions
 */
-
+// Array
 const man = ["shaktiman", "nagraaj", "Doga"]
 //object
 let obj = {
@@ -61,8 +61,8 @@ let myName = "AMAN-YADAV"
 let otherName = myName
 
 otherName = "YADAV_YADAV"
-console.log(myName);
-console.log(otherName);
+console.log(myName);   // AMAN-YADAV
+console.log(otherName);  // YADAV-YADAV                Because of it is primitive datatype(copy)
 
 
 
