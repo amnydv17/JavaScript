@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Yadav</title>
+</head>
+<body style=" background-color: #212121;color: #fff;">
+  <ul class="language">
+    <li>JavaScript</li>
+  </ul>
+  
+</body>
+
+
+<script>
+  function addLanguage(langName){
+  const li = document.createElement('li');
+  li.innerHTML = `${langName}` // take more time because it goes and traverse then select and then lata hai fir change hota hai fir wha jake save karta hai
+  document.querySelector('.language').appendChild(li)
+  }
+  addLanguage("Python")
+  addLanguage("C++")
+  addLanguage("C Programming")
+
+
+
+  function optimiseLangName(langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName)) // create new node and add value
+    document.querySelector('.language').appendChild(li)
+  }
+
+  optimiseLangName("Java")
+  optimiseLangName("TypeScript")
+
+
+  // Edit value
+  const secondLang = document.querySelector('li:nth-child(2)')
+  <!-- console.log(secondLang) -->
+  // secondLang.innerHTML = "Mojo"---> take more time
+
+  const li = document.createElement('li')
+  li.textContent = "Aman"
+  secondLang.replaceWith(li)
+
+  // edit
+  // const firstLang = document.querySelector('li:first-child')
+  const firstLang = document.querySelector('li:nth-child(1)')
+  firstLang.outerHTML = '<li> Chai aur Code </li>'
+
+
+  // remove 
+  const lastLang = document.querySelector('li:last-child')
+  lastLang.remove()
+</script>
+
+
+</html>
